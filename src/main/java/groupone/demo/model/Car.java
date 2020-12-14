@@ -14,6 +14,9 @@ public class Car {
     private String firstRegistration;  // SKAL være i camel-case (firstName)
 
     @Column
+    private String imageUrl;
+
+    @Column
     private String fuelType;
 
     @Column
@@ -47,6 +50,14 @@ public class Car {
 
     public void setFirstRegistration(String firstRegistration) {
         this.firstRegistration = firstRegistration;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public String getFuelType() {
