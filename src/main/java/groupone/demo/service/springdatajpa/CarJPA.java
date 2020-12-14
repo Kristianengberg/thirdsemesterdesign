@@ -12,8 +12,6 @@ import java.util.Set;
 @Service
 public class CarJPA implements CarService {
 
-
-
     private final CarRepository carRepository;
 
     public CarJPA(CarRepository carRepository) {
