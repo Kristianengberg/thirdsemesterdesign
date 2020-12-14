@@ -3,12 +3,16 @@ package groupone.demo.service.springdatajpa;
 import groupone.demo.model.Car;
 import groupone.demo.repository.CarRepository;
 import groupone.demo.service.CarService;
+import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
+@Service
 public class CarJPA implements CarService {
+
+
 
     private final CarRepository carRepository;
 
