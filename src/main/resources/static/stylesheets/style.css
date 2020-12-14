@@ -4,3 +4,10 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: black;
+    color: white;
+}
