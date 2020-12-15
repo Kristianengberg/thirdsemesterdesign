@@ -1,82 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Bilbasen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link th:href="@{/stylesheets/style.css}" rel = stylesheet>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        /* Pen-specific styles */
-        html, body, section {
-            height: 100%;
+        * {
+            box-sizing: border-box;
         }
 
-        body {
-            color: #fff;
-            font-family: sans-serif;
-            font-size: 1.25rem;
-            line-height: 150%;
-            text-align: center;
-            text-shadow: 0 2px 2px #b6701e;
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 300px; /* Should be removed. Only for demonstration */
         }
 
-        div {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
         }
-
-        h1 {
-            font-size: 1.75rem;
-            margin: 0 0 0.75rem 0;
-        }
-
-        /* Pattern styles */
-        .container {
-            display: flex;
-        }
-
-        .left-half {
-            background-color: #ff9e2c;
-            flex: 1;
-            padding: 1rem;
-        }
-
-        .right-half {
-            background-color: #b6701e;
-            flex: 1;
-            padding: 1rem;
-        }
-
     </style>
+
 </head>
 <body>
 
+<div th:insert="fragments/navbar"></div>
+
 <h1>Engberg Service Aps/</h1>
 <h2>Bil cartotek!</h2>
-
-<div>
-    <section class="container">
-     <div class="left">
-            <article>
-                <h1>Left Half</h1>
-                <p>Weekends don't count unless you spend them doing something completely pointless.</p>
-            </article>
-        </div>
-        <div class="mid">
-            <article>
-                <h1>Mid part</h1>
-                <p> bla bla bla</p>
-            </article>
-
-        </div>
-        <div class="right">
-           <article>
-                <h1>Right Half</h1>
-                <p>If your knees aren't green by the end of the day, you ought to seriously re-examine your life.</p>
-            </article>
-        </div>
-    </section>
+<table>
+<div class="row">
+    <div class="column" style="background-color:#aaa;">
+        <h2>Column 1</h2>
+        <p>Some text..</p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+        <h2>Column 2</h2>
+        <p>Some text..</p>
+    </div>
+    <div class="column" style="background-color:#ccc;">
+        <h2>Column 3</h2>
+        <p>Some text..</p>
+    </div>
 </div>
+
+
 <div>
     <div class="column" style="background-color: aquamarine">
         <h2>Opret Biltilbud</h2>
@@ -88,6 +62,6 @@
         <h2> bla bla bla</h2>
     </div>
 </div>
-
+</table>
 </body>
 </html>
