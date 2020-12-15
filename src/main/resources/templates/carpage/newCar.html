@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Ny Bil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link rel = stylesheet href="/../stylesheets/style2.css" type="text/css">
+</head>
+<body>
+
+<div th:insert="fragments/navbar"></div>
+
+
+<div align="center">
+    <h1>Engberg Service aps.</h1>
+    <h3>Indtast Bil Information</h3>
+
+    <form method="post" action="/newCar/addCar">
+
+        <label>1. Registrering</label>
+        <input type="text" name="firstRegistration">
+        <label>Brændstof Type</label>
+        <input type="text" name="fuelType">
+        <label>Årstal</label>
+        <input type="text" name="modelYear">
+        <label>Bil Type</label>
+        <input type="text" name="carType">
+        <label>Antal Døre</label>
+        <input type="number" name="amountOfDoors"><br>
+        <label>Antal HK</label>
+        <input type="number" name="horsepower"><br>
+        <label>Antal KM</label>
+        <input type="number" name="kilometersDriven"><br>
+        <label>Farve</label>
+        <input type="text" name="colorOfCar"><br>
+        <label>Mærke</label>
+        <input type="text" name="carBrand"><br>
+
+        <input type="submit" value="Save" style="width: 55px">
+    </form>
+    <br>
+    <br>
+
+</div>
+
+
+<div class="footer">
+    <address>
+        Adresse:<br>
+        Engberg Service /v Jan Engberg<br>
+        Bramstedvej 4, 4872 Idestrup<br>
+        Danmark
+    </address>
+</div>
+</body>
+</html>
