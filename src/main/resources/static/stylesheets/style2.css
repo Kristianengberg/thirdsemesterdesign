@@ -61,7 +61,7 @@ img {vertical-align: middle;}
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .4}
+    from {opacity: .9}
     to {opacity: 1}
 }
 
@@ -73,4 +73,21 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
     .text {font-size: 11px}
+}
+
+.footer {
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: black;
+    text-align: center;
+}
+
+.navbar {
+    display: block;
+    width: 100%;
+    background-color: grey;
+    color: black;
 }
