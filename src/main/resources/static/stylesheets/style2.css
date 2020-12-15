@@ -12,7 +12,9 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    height: 700px;
+    overflow: hidden;
+    /*max-width: 1000px;*/
     position: relative;
     margin: auto;
 }
@@ -96,4 +98,14 @@ img {vertical-align: middle;}
 input, label {
     display: block;
     width: 15%;
+}
+
+#frontpage {
+    background-color: cadetblue;
+}
+
+#newCar {
+    background-image: url('/../images/image4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
 }
