@@ -18,4 +18,15 @@ public class FrontpageController {
     public String index() {
         return "frontpage/frontpage";
     }
+
+    @GetMapping("/aboutus")
+    public String aboutus() {
+        return "aboutus/aboutus";
+    }
+
+    @GetMapping("/contacts")
+    public String contact() {
+        return "contact/contact";
+    }
+
 }
