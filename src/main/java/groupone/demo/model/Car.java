@@ -40,6 +40,7 @@ public class Car {
     @Column
     private String carBrand;
 
+
     public Long getId() {
         return id;
     }
