@@ -15,17 +15,20 @@
     <h1>Engberg Service aps.</h1>
     <h3>Bil-Kartoteket</h3>
 
-
+<form>
     <div class="row" th:each="car:${cars}">
         <div class="column">
-            <h3 th:text="${car.getImageUrl()}"></h3>
+            <a href>
+            <img th:src="${car.getImageUrl()}">
+            </a>
             <h3 th:text="${car.getCarBrand()}"></h3>
             <h3 th:text="${car.getCarType()}"></h3>
             <h3 th:text="${car.getKilometersDriven()}"></h3>
             <h3 th:text="${car.getModelYear()}"></h3>
+            <input type="submit" value="Køb" style="width: 55px">
         </div>
     </div>
-
+</form>
 
 
     <div class="footer">
