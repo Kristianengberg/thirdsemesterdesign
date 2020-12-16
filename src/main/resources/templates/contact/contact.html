@@ -1,10 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel = stylesheet href="/../stylesheet/mystyle.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
+
+<div class="container">
+    <div style="text-align:center">
+        <h2>Kontakt os</h2>
+        <p>Udfyld formularen ved spørgsmål</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="/../images/engberg.jpg" style="width:100%">
+        </div>
+        <div class="column">
+            <form action="/action_page.php">
+                <label for="fname">Navn</label>
+                <input type="text" id="fname" name="firstname" placeholder="Navn">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email">
+                <label for="type">Hvad drejer henvendelsen sig om</label>
+                <select id="type" name="type">
+                    <option value="bil">Køb af Bil</option>
+                    <option value="rep">Reperation</option>
+                    <option value="misc">Anden henvendelse</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Hvad drejer hendvendelsen sig om..." style="height:170px"></textarea>
+                <input type="submit" value="Send email">
+            </form>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
+
