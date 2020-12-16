@@ -15,41 +15,6 @@
     <h1>Engberg Service aps.</h1>
     <h3>Bil-Kartoteket</h3>
 
-    <div class="grid-item col-md-4 col-sm-6 col-lg-4  col-xs-12 mb50">
-        <div class="inner">
-            <div class="row">
-                <div class="col-md-12 imgcol gridcarimg" style=""><a href="/brugte-biler/bildetaljer/BMW-cabriolet-bid-2067193531"><div class="picture3 picture_1"><img src="https://i.ebayimg.com/images/g/WBoAAOSwM85bfbCA/s-l1600.jpg?width=667&amp;quality=60" class="img-responsive"></div></a></div>
-                <div class="col-md-12 ">
-                    <div class="row bigrow">
-                        <div class="equalheight equal_1">
-                            <div class="col-md-12 col-sm-12 col-xs-12 carspecs borbottom text-left">
-                                <h2 style="font-weight:bold;" class="qf stdh1 mt20 mb10">BMW&nbsp;325i</h2>
-                                <hr class="ultrasmallborder mb10">
-                            </div>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="variantline mb10">2,5&nbsp;Cabriolet</div>
-                            </div>
-                            <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="meta">
-                                    <ul class="clearfix nomarg">
-                                        <li class="text-left specline mb5 mt5">1.reg.<span class="badges pull-right specvalue">07/1986 </span></li>
-                                        <li class="text-left specline mb5 mt5">Km.<span class="badges pull-right specvalue">139.000 </span></li>
-                                        <li class="text-left specline mb5 mt5">Brændstof<span class="badges pull-right specvalue">Benzin </span></li>
-                                        <li class="text-left specline mb5 mt5">Farve<span class="badges pull-right specvalue">Rød </span></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-12 col-sm-12 col-xs-12"><a href="/brugte-biler/bildetaljer/BMW-cabriolet-bid-2067193531" class="btn btn-primary mt20">DKK 149.800
-
-
-                                &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <div class="row" th:each="car:${cars}">
         <div class="column">
@@ -59,24 +24,6 @@
             <h3 th:text="${car.getKilometersDriven()}"></h3>
             <h3 th:text="${car.getModelYear()}"></h3>
         </div>
-        <div class="column">
-            <h3 th:text="${car.getImageUrl()}"></h3>
-            <h3 th:text="${car.getCarBrand()}"></h3>
-            <h3 th:text="${car.getCarType()}"></h3>
-            <h3 th:text="${car.getKilometersDriven()}"></h3>
-            <h3 th:text="${car.getModelYear()}"></h3>
-        </div>
-        <div class="column">
-            <h3 th:text="${car.getImageUrl()}"></h3>
-            <h3 th:text="${car.getCarBrand()}"></h3>
-            <h3 th:text="${car.getCarType()}"></h3>
-            <h3 th:text="${car.getKilometersDriven()}"></h3>
-            <h3 th:text="${car.getModelYear()}"></h3>
-        </div>
-        <form>
-            <input type="submit" name="frem" value="Tilbage">
-            <input type="submit" name="frem" value="Frem">
-        </form>
     </div>
 
 
