@@ -21,4 +21,9 @@ public class CarController {
         return "carpage/carPage";
     }
 
+    @RequestMapping("/contacts")
+    public String btnContact() {
+        return "contact/contact";
+    }
+
 }
