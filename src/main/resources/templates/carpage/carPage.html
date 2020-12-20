@@ -11,9 +11,10 @@
 <body id="newCar">
 <div th:insert="fragments/navbar"></div>
 
-
+    <div class="title-enterprise">
     <h1>Engberg Service aps.</h1>
     <h3>Bil-Kartoteket</h3>
+    </div>
 
     <section id="feature">
 
@@ -21,9 +22,9 @@
         <div class="container-fluid">
             <div class="row">
 
-                <div class="feature-single-box col-md-4" th:each="car:${cars}">
+                <div class="feature-single-box col-lg-4 col-md-6" th:each="car:${cars}">
                     <div class="feature-box">
-                        <a class="car-images" href><img style="size: 50px 50px" th:src="${car.getImageUrl()}"></a>
+                        <a class="car-images" href><img th:src="${car.getImageUrl()}" width="450" height="300"></a>
                         <h5>Mærke: <span th:text="${car.getCarBrand()}"></span></h5>
                         <h5>Type: <span th:text="${car.getCarType()}"></span></h5>
                         <h5>Km kørt: <span th:text="${car.getKilometersDriven()}"></span></h5>
