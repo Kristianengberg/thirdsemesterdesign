@@ -14,7 +14,7 @@ public class FrontpageController {
     }
 
 
-    @GetMapping("/home")
+    @GetMapping({"/home","/"})
     public String index() {
         return "frontpage/frontpage";
     }
