@@ -12,31 +12,42 @@
     <link rel="stylesheet" href="/../stylesheets/style2.css" type="text/css" />
   </head>
   <body>
-    <div>
-      <nav class="navbar navbar-inverse">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="/home" style="color: black"
-              >Forside</a
-            >
-            <a class="navbar-brand" href="/contacts" style="color: black"
-              >Kontakt</a
-            >
-            <a class="navbar-brand" href="/aboutus" style="color: black"
-              >Profil</a
-            >
-            <a class="navbar-brand" href="/carPage" style="color: black"
-              >Bil Basen</a
-            >
-            <a class="navbar-brand" href="/offers" style="color: black"
-            >Tilbud</a
-            >
-            <a class="navbar-brand" href="/newCar" style="color: black"
-              >Tilføj Bil</a
-            >
+          <a class="navbar-brand" href="/home">Engberg Service</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/home">Hjem</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contacts">Kontakt</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/aboutus">Om Os</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href=/carPage>Biler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/offers">Tilbehør</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/newCar">Tilføj Bil</a>
+              </li>
+            </ul>
+            <!--
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            -->
           </div>
         </div>
       </nav>
-    </div>
+
   </body>
 </html>

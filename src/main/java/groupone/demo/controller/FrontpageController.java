@@ -3,19 +3,23 @@ package groupone.demo.controller;
 import groupone.demo.model.Car;
 import groupone.demo.service.CarService;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
 @Controller
 public class FrontpageController {
 
-    public FrontpageController(){
+    private CarService carService;
 
+    public FrontpageController(CarService carService){
+        this.carService = carService;
     }
 
 
     @GetMapping("/home")
-    public String index() {
+    public String index(Model model) {
+        model.addAttribute("cars", carService.findAll());
         return "frontpage/frontpage";
     }
 
@@ -28,6 +32,9 @@ public class FrontpageController {
     public String contact() {
         return "contact/contact";
     }
+
+
+
 
 
 
